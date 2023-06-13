@@ -1,0 +1,289 @@
+body {
+    background-color: #532E1C;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 17px;
+    left: 5%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 25px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 150px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #AD8B73;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+    color: white;
+    font-size: 30px;
+    float: right;
+    margin-top: 75px;
+    margin-right: 40px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1118px) {
+    nav img {
+        left: 8%
+     }
+}
+
+@media (max-width: 944px) {
+    nav img {
+        left: 6%;
+        top: 20px;
+        width: 130px;
+     }
+     nav ul li a {
+        font-size: 20px;
+     }
+}
+
+@media (max-width: 860px) {
+    label #btn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #532E1C;
+        top: 150px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+     nav ul li a{
+        font-size: 20px;
+    }
+     
+    #check:checked ~ ul {
+        left: 0;
+    }
+    #check:checked ~ label #btn {
+        display: none;
+    }
+    
+    #check:checked ~ label #cancel {
+        display: block;
+        color: white;
+    }
+}
+
+hr {
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.hr hr {
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin-top: 150px;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.gallery {
+    padding: 0;
+    margin: auto;
+    height: max-height;
+    width: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+    
+.about img {
+    float: auto;
+    margin: auto;
+    padding: 0;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}			
+    
+.about img {
+    float: auto;
+    margin-top: 20px;
+    padding: 0;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}	
+    
+.about img {
+    float: auto;
+    padding: 0;
+    margin: auto;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}	
+
+.about img {
+    float: auto;
+    margin: auto;
+    padding: 0;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.we h1 {
+    font-family: 'Love Light', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+.we p {
+    font-family: 'Tapestry', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.growth p {
+    font-family: 'Tapestry', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.business p {
+    font-family: 'Love Light', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 100pc 0 30px;
+    border-top-left-radius: 50px;
+    font-size: 16px;
+    line-height: 20px;
+}
+    
+.row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+    
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+    
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+    
+.col h3 {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Diplomata SC', cursive;
+}
+
+.col p {
+    font-family: 'Tapestry', cursive;
+    font-size: 15px;
+}
+    
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+li a {
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Tapestry', cursive;
+    font-size: 15px;
+}
+    
+.col h4 {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Diplomata SC', cursive;
+}
